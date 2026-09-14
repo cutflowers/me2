@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Doggo — милый сайт о собаках и породах.">
+  <title>Doggo — мир собак 🐶</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home">🐾 DOGGO</a>
+      <nav>
+        <a href="#breeds">Породы</a>
+        <a href="#facts">Факты</a>
+        <a href="#gallery">Галерея</a>
+      </nav>
+      <button id="themeBtn" class="icon-btn" aria-label="Переключить тему">☀️</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">🐶 сайт для настоящих доггеров</span>
+          <h1>мир, где <span>каждый пёс</span> — хороший пёс</h1>
+          <p>Познакомься с популярными породами, узнай забавные факты и просто подними себе настроение.</p>
+          <div class="buttons">
+            <a class="btn primary" href="#breeds">Смотреть породы</a>
+            <button class="btn secondary" id="factBtn">Случайный факт</button>
+          </div>
+          <div id="factBox" class="fact-box hidden"></div>
+        </div>
+        <div class="hero-dog">🐕</div>
+      </div>
+    </section>
+
+    <section id="breeds" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">ПОРОДЫ</span>
+            <h2>Кто тут самый хороший?</h2>
+          </div>
+          <input id="search" class="search" type="search" placeholder="🔎 Найти породу...">
+        </div>
+        <div id="breedGrid" class="cards"></div>
+      </div>
+    </section>
+
+    <section id="facts" class="section soft">
+      <div class="container facts-layout">
+        <div>
+          <span class="eyebrow">ИНТЕРЕСНО</span>
+          <h2>Немного собачьей науки</h2>
+          <p>Собаки живут рядом с людьми тысячи лет и умеют распознавать человеческие эмоции, запахи и даже некоторые слова.</p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><strong>300+</strong><span>пород собак</span></div>
+          <div class="stat"><strong>220 млн</strong><span>обонятельных рецепторов у некоторых собак</span></div>
+          <div class="stat"><strong>10–13</strong><span>лет — средняя продолжительность жизни</span></div>
+          <div class="stat"><strong>🐾</strong><span>100% уровень милоты</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <span class="eyebrow">ГАЛЕРЕЯ</span>
+        <h2>просто хорошие собаки</h2>
+        <div class="gallery">
+          <div class="photo p1">🐶<small>улыбка дня</small></div>
+          <div class="photo p2">🦮<small>готов к прогулке</small></div>
+          <div class="photo p3">🐕‍🦺<small>лучший друг</small></div>
+          <div class="photo p4">🐩<small>модник</small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <span>🐾 DOGGO</span>
+      <span>Сделано с любовью к собакам</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
